@@ -7,12 +7,12 @@ describe('Clock', () => {
     clock = new Clock();
   });
 
-  describe('getTimeRemaining', () => {
-    it('returns time between now and deadline', () => {
-      let now = clock.getTimeNow();
-      let deadline = 'December 25 2020 15:00:00';
-      let result = clock.getTimeRemaining(deadline)
-      expect(clock.getTimeRemaining(deadline)).toEqual(result);
+  describe('getFormattedDate', () => {
+    it('returns formatted date', () => {
+      let clock.formatted_date = "24 January 2020 08:00:00 GMT"
+      clock.getFormattedDate()
+      result = "24 / 01 / 2020"
+      expect(clock.formatted_date).toEqual(result);
     });
   });
 });
