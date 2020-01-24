@@ -11,7 +11,8 @@ $(document).ready(function() {
   }
 
   function getCountdown() {
-    $('#countdown').text(clock.getTimeRemaining(deadline));
+    // $('#countdown').text(clock.getTimeRemaining(deadline));
+    $('#countdown').text(clock.initialiseClock(deadline));
     // $('#countdown').attr('class', clock.getTimeRemaining(deadline))
   }
 });

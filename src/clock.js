@@ -34,16 +34,16 @@ Clock.prototype.getTimeRemaining = function(deadline) {
   // };
 
 
-// Clock.prototype.initialiseClock = function(deadline) {
-//   let timeinterval = setInterval(function() {
-//     let t = Clock.prototype.getTimeRemaining(deadline);
-//     return t;
-//     if (t.total <= 0) {
-//       clearInterval(timeinterval);
-//       console.log("Expired")
-//     }
-//   }, 1000);
-// }
+Clock.prototype.initialiseClock = function(deadline) {
+  let timeinterval = setInterval(function() {
+    let t = Clock.prototype.getTimeRemaining(deadline);
+    return t;
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+      console.log("Expired")
+    }
+  }, 1000);
+}
 
 
 // var deadline = new Date("Dec 25, 2020 15:37:25").getTime();
